@@ -1,0 +1,42 @@
+
+.directions {
+    padding-bottom: 94px;
+
+    @media screen and(max-width: 1200px) {
+        display: none; 
+    }
+  }
+  
+  .directions__list {
+    @extend %list;
+    display: flex;
+  }
+  
+  .directions__item {
+    width: calc((100% - 30 * 2px) / 3);
+    position: relative;
+  }
+  
+  .directions__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .directions__info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 27px 32px;
+    width: 100%;
+  
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  
+  .directions__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: $primaryWhiteColor;
+  }

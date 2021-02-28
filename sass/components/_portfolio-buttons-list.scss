@@ -1,0 +1,23 @@
+.buttons-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+}
+
+.buttons-list__item {
+  margin-bottom: 15px;
+}
+
+.buttons-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.buttons-list__item:nth-child(n + 4) {
+ margin-bottom: 0px;
+}
+
+.buttons-list__item:nth-child(3) {
+  margin-right: 0px;
+}

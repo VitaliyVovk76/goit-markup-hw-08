@@ -1,0 +1,65 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $textPrimaryColor;
+  background-color: $primaryWhiteColor;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section{
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &.team{
+    background-color: $backgroundSecondaryColor;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section__no-padding{
+  padding-bottom: 0;
+}
+
