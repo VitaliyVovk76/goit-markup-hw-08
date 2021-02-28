@@ -33,11 +33,11 @@
   display: none;
 }
 
-.menu-container{
-    background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-size: 20px;
+.menu-container {
+  background-color: palegoldenrod;
+  padding: 40px 48px;
+  // text-align: center;
+  // font-size: 20px;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -47,7 +47,113 @@
     width: 100%;
 
     &.is-open {
-        display: block;
-      }
-  } 
+      display: block;
+    }
+  }
+}
+
+.site-nav__list {
+  @extend %list;
+}
+
+.site-nav__item {
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.site-nav__item:last-child {
+  // margin-bottom: 302px;
+}
+
+.site-nav__link {
+  @extend %link;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: $titleColor;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &.site-nav__link--current {
+    color: $accentColor;
+  }
+}
+
+.contact-nav {
+  @extend %list;
+}
+
+.contact-nav__item {
+  & .contact-nav__img {
+    @media screen and(max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.contact-nav__link {
+  @extend %link;
+
+  @media screen and(max-width: 767px) {
+    &.envelope {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      color: $textPrimaryColor;
+    }
+
+    &.telephone {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: $textPrimaryColor;
+    }
+  }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.menu-soclink__list {
+  @extend %list;
+
+  display: flex;
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-soclink__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-soclink__item:not(:last-child)::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
+}
+
+.menu-soclink__link {
+  @extend %link;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: $accentColor;
 }
