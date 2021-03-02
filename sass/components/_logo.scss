@@ -10,14 +10,20 @@
   line-height: 1.17;
   text-decoration: none;
 
+  color: $accentColor;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
   @media screen and(min-width: 1200px) {
     font-size: 26px;
     line-height: 1.2;
   }
 
-
-  &--blue {
-    color: $accentColor;
+  &--black {
+    color: $titleColor;
   }
 
   &--white {
