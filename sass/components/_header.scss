@@ -1,5 +1,6 @@
 .header {
   position: relative;
+
 }
 
 .header.bottom-line {
@@ -41,6 +42,7 @@
 .menu-container {
   background-color: $primaryWhiteColor;
   padding: 40px 48px;
+  
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -62,6 +64,7 @@
 }
 
 .site-nav{ 
+
   @media screen and(min-width: 768px) {
     margin-right: 82px;
   }

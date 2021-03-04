@@ -59,6 +59,7 @@ body {
   background-color: #ffffff;
   letter-spacing: 0.03em;
   font-size: 14px;
+  min-width: 320px;
 }
 
 h1,
@@ -127,6 +128,12 @@ address {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -215,6 +222,12 @@ address {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -883,10 +896,6 @@ address {
   .buttons-list__item:nth-child(3) {
     margin-right: 0px;
   }
-}
-
-.card-list {
-  background-color: teal;
 }
 
 @media screen and (min-width: 768px) {
