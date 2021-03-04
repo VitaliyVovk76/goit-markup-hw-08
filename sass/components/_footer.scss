@@ -22,6 +22,7 @@
 
 .footer__contacts {
   @extend %flex-column-centered;
+  align-items: center;
   margin-bottom: 60px;
 
   @media screen and(min-width: 768px) {
@@ -44,10 +45,9 @@
 
 .address {
   @extend %flex-column-centered;
-
+  align-items: center;
   @media screen and(min-width: 1200px) {
     align-items: flex-start;
-      
   }
 }
 
@@ -81,6 +81,10 @@
   @extend %flex-column-centered;
   margin-bottom: 60px;
 
+  @media screen and(max-width: 1199px) {
+    align-items: center;
+  }
+
   @media screen and(min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -96,3 +100,7 @@
 
   color: $primaryWhiteColor;
 }
+
+.footer .social-networks__btn{
+  background-color: rgba(255, 255, 255, 0.1);
+} 

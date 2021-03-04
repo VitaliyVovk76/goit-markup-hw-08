@@ -1,5 +1,10 @@
 .form-footer{
     @extend %flex-column-centered;
+
+    @media screen and(max-width: 1199px) {
+        align-items: center;
+        
+      }
 }
 
 .form-footer__appeal{
@@ -16,6 +21,7 @@ color: $primaryWhiteColor;
 
 .form-footer__wrapper{
     @extend %flex-column-centered;
+    align-items: center;
     width: 100%;
     @media screen and(min-width: 1200px) {
         flex-direction: row;;

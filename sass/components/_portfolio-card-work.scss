@@ -14,8 +14,6 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
 .card-list__link:focus .card-work__overlay,
 .card-list__link:hover .card-work__overlay {
   transform: translateY(-100%);
@@ -35,6 +33,12 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   background-color: $primaryWhiteColor;
+
+  @media screen and(min-width: 768px)and(max-width: 1199px){
+    .сard-list__item:first-child & {
+      padding-bottom: 56px;
+    }
+  } 
 }
 
 .card-work__title {

@@ -3,21 +3,32 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 40px;
+  margin-bottom: 46px;
+
+  @media screen and(min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 56px;
+  }
 }
 
 .buttons-list__item {
-  margin-bottom: 15px;
-}
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 
-.buttons-list__item:not(:last-child) {
-  margin-right: 8px;
-}
+  @media screen and(max-width: 767px) {
+    margin-bottom: 15px;
 
-.buttons-list__item:nth-child(n + 4) {
- margin-bottom: 0px;
-}
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
 
-.buttons-list__item:nth-child(3) {
-  margin-right: 0px;
+    &:nth-child(3) {
+      margin-right: 0px;
+    }
+  }
 }
