@@ -4,7 +4,6 @@ body {
   background-color: $primaryWhiteColor;
   letter-spacing: 0.03em;
   font-size: 14px;
-  min-width: 320px;
 }
 
 h1,
@@ -54,6 +53,10 @@ address {
 
   &.team{
     background-color: $backgroundSecondaryColor;
+  }
+
+  @media screen and(max-width: 479px) {
+    width: 100%; 
   }
 
   @media screen and(min-width: 1200px) {
