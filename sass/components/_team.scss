@@ -22,11 +22,9 @@
       margin-bottom: 30px;
     }
   }
-  
 
   @media screen and(min-width: 468px) {
     width: 450px;
-
   }
 
   @media screen and(min-width: 768px) {
@@ -48,22 +46,21 @@
   }
 }
 
-.team__image-wrapper{
+.team__image-wrapper {
   // border: 1px solid red;
   @media screen and(min-width: 480px) {
     width: 450px;
-    height: 460px; 
+    height: 460px;
   }
 
   @media screen and(min-width: 768px) {
-   width: 354px;
-   height: 374px;
+    width: 354px;
+    height: 374px;
   }
 
   @media screen and(min-width: 1200px) {
     width: 270px;
     height: 260px;
-    
   }
 }
 
